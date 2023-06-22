@@ -22,8 +22,8 @@ class TestGame:
         game = Game("Skribbl.io")
         assert (hasattr(game, "title"))
 
-        # with pytest.raises(Exception):
-        #     Game("")
+        with pytest.raises(Exception):
+            Game("")
 
     def test_title_setter(self):
         '''Cannot change the title of the game'''
